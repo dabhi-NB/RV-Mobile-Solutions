@@ -1,0 +1,128 @@
+body {
+  background-color: #44484d;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #333;
+}
+
+/* product */
+
+.btn-outline-light,
+.btn-outline-warning {
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+}
+
+body {
+  background: #0b0b0b;
+  color: #f1f1f1;
+}
+
+.card {
+  background: #111 !important;
+  color: #fff;
+}
+.bg-dark {
+  background: #111 !important;
+  color: #fff !important;
+}
+.btn-outline-light {
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+a {
+  color: #fff;
+}
+.container {
+  max-width: 1100px;
+}
+
+.btn-outline-light:hover {
+  background-color: #f8f9fa;
+  color: #000;
+}
+
+.btn-outline-warning:hover {
+  background-color: #ffc107;
+  color: #000;
+}
+.auth-container-dark {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top left, #0d1117, #010409);
+}
+
+.auth-card-dark {
+  background: #161b22;
+  border-radius: 15px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 450px;
+  border: 1px solid #30363d;
+  transition: all 0.3s ease;
+}
+
+.auth-card-dark:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.form-control {
+  border: 1px solid #30363d !important;
+}
+
+.form-control:focus {
+  border-color: #58a6ff !important;
+  box-shadow: 0 0 10px rgba(88, 166, 255, 0.3);
+  background-color: #0d1117 !important;
+  color: #fff !important;
+}
+
+.btn-success,
+.btn-primary {
+  background-color: #238636 !important;
+  border: none !important;
+  transition: 0.3s;
+}
+
+.btn-success:hover,
+.btn-primary:hover {
+  background-color: #2ea043 !important;
+  transform: scale(1.02);
+}
+.navbar .nav-link {
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #58a6ff !important;
+  transform: translateY(-1px);
+}
+
+.btn-outline-danger {
+  color: #f85149;
+  border-color: #f85149;
+  transition: background 0.3s ease;
+}
+
+.btn-outline-danger:hover {
+  background-color: #f85149;
+  color: white;
+}
+
+.badge {
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+/* main.css additions */
+.carousel-caption { background: rgba(0,0,0,0.35); padding: 1rem; border-radius: 6px; }
+.category-card { transition: transform .15s, box-shadow .15s; }
+.category-card:hover { transform: translateY(-4px); box-shadow: 0 6px 18px rgba(0,0,0,0.5); }
+.btn.active { box-shadow: inset 0 0 0 2px rgba(255,193,7,0.25); }
+.card-title { white-space: normal; }
