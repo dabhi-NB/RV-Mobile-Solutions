@@ -1,4 +1,4 @@
-📂 Project Structure (Daksh Mobile Accessories)
+📂 Project Structure (RV Mobile Solutions)
 daksh-mobile-accessories/
 ├── backend/
 │   ├── server.js
@@ -43,7 +43,7 @@ daksh-mobile-accessories/
 
 ⚙️ Backend Setup
 # Navigate to backend folder
-cd D:\Daksh Mobile Accessories\backend
+cd D:\RV Mobile Solutions\backend
 
 # Initialize Node.js project
 npm init -y
@@ -66,7 +66,7 @@ MONGO_URI=mongodb://localhost:27017/daksh_accessories
 
 🎨 Frontend Setup (Vite + React)
 # Navigate to frontend folder
-cd D:\Daksh Mobile Accessories\frontend
+cd D:\RV Mobile Solutions\frontend
 
 # Create React app with Vite in current folder
 npm create vite@latest . 

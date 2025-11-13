@@ -1,7 +1,7 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "Daksh Mobile Accessories Backend",
+  "description": "RV Mobile Solutions Backend",
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",

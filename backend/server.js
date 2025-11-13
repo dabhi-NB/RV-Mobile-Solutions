@@ -38,7 +38,7 @@ app.use("/api/payments", paymentRoutes);
 
 // ✅ Root Route
 app.get("/", (req, res) => {
-  res.send("Daksh Mobile Accessories API running successfully 🚀");
+  res.send("RV Mobile Solutions API running successfully 🚀");
 });
 
 // ✅ Error Handling Middleware (optional but recommended)
