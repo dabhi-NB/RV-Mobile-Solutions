@@ -1,105 +1,60 @@
-📂 Project Structure (RV Mobile Solutions)
-daksh-mobile-accessories/
-├── backend/
-│   ├── server.js
-│   ├── package.json
-│   ├── .env
-│   ├── models/
-│   │   ├── Product.js
-│   │   ├── User.js
-│   │   └── Order.js
-│   ├── routes/
-│   │   ├── productRoutes.js
-│   │   ├── userRoutes.js
-│   │   └── orderRoutes.js
-│   ├── controllers/
-│   │   ├── productController.js
-│   │   ├── userController.js
-│   │   └── orderController.js
-│   └── config/
-│       └── db.js
-├── frontend/
-│   ├── index.html
-│   ├── package.json
-│   ├── vite.config.js
-│   ├── public/
-│   └── src/
-│       ├── main.jsx
-│       ├── App.jsx
-│       ├── api.js
-│       ├── pages/
-│       │   ├── HomePage.jsx
-│       │   ├── ProductPage.jsx
-│       │   ├── CartPage.jsx
-│       │   └── CheckoutPage.jsx
-│       ├── components/
-│       │   ├── Navbar.jsx
-│       │   ├── ProductCard.jsx
-│       │   ├── CartItem.jsx
-│       │   └── Footer.jsx
-│       └── styles/
-│           └── main.css
-└── README.md
+# RV Mobile Solutions
 
-⚙️ Backend Setup
-# Navigate to backend folder
-cd D:\RV Mobile Solutions\backend
+...existing code...
 
-# Initialize Node.js project
-npm init -y
+RV Mobile Solutions is a small full‑stack project (Node.js backend + Vite + React frontend) for a mobile accessories storefront and admin utilities.
 
-# Install dependencies
-npm install express mongoose dotenv cors bcryptjs jsonwebtoken
+## Table of contents
+- Project structure
+- Requirements
+- Quick start (development)
+- Environment variables
+- Build & deploy
+- License
 
-# Install dev dependency for development
-npm install -D nodemon
+## Project structure
+- backend/ — Express API, server.js, routes, models
+- frontend/ — Vite + React app
+- .gitattributes, .gitignore, README.md
 
-# Start backend server
-npm start
+## Requirements
+- Node.js 16+ (or LTS)
+- npm (or yarn/pnpm)
+- MongoDB (if backend uses a DB)
 
+## Quick start (development)
 
-Create .env file inside backend/:
+1. Clone / open project:
+   cd "D:\RV Mobile Solutions"
 
+2. Backend:
+   cd backend
+   npm install
+   copy .env.example .env   (or create .env with values)
+   npm run start            (or npm run dev if configured)
+
+3. Frontend:
+   cd ../frontend
+   npm install
+   npm run dev
+
+Open frontend dev server URL shown by Vite (usually http://localhost:5173) and backend on configured port (default 5000/3000).
+
+## Environment variables (example .env for backend)
+MONGO_URI=mongodb://localhost:27017/rv_mobile_solutions
 PORT=5000
-MONGO_URI=mongodb://localhost:27017/daksh_accessories
+JWT_SECRET=your_jwt_secret
+STRIPE_KEY=your_stripe_key
 
+## Build & deploy
+- Frontend: cd frontend && npm run build → serve generated dist with a static host.
+- Backend: ensure .env values available on server, start with PM2/systemd or Docker.
 
-🎨 Frontend Setup (Vite + React)
-# Navigate to frontend folder
-cd D:\RV Mobile Solutions\frontend
+## Notes
+- Search and update any remaining old names (e.g., "Daksh") if needed.
+- Use a Personal Access Token (PAT) for HTTPS pushes or set up SSH keys.
 
-# Create React app with Vite in current folder
-npm create vite@latest . 
+## License
+Choose a license (e.g., MIT) and add LICENSE file if required.
 
-# Choose: React → JavaScript
-
-# Install frontend dependencies
-npm install axios bootstrap react-router-dom
-
-# Start React development server
-npm run dev
-
-
-👉 If you want to use npm start instead of npm run dev, edit package.json in frontend:
-
-"scripts": {
-  "start": "vite",
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview"
-}
-
-
-Now you can simply run:
-
-npm start
-
-
-✅ With this structure, you’ll have:
-
-Backend: Express + MongoDB + JWT + Bcrypt
-
-Frontend: Vite + React + Bootstrap + Router + Axios
-
-Clean setup without CRA errors
-
+...existing code...
